@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+    <link rel="icon" href="./N-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <header>
+        <h1>ToDo list</h1>
+      </header>
+      <article>
+        <section id="sectionOne">
+          <!-- 
+              form: like img, input, etc... we didn't write inside them
+              for: to link the label with the input
+              post: request to send data (which is not visible in the URL) to the server
+              get: request to send data (which is visible in the URL) to the server
+              name: used to identify the input field when the form data is submitted to the server
+          -->
+          <form action="" method="post" id="formOne">
+            <label for="inputOne" id="labelOne">Add Items</label>
+            <input
+              type="text"
+              name=""
+              placeholder="write here your item"
+              id="inputOne"
+            />
+            <button type="submit" id="buttonOne">Add</button>
+          </form>
+        </section>
+        <section id="sectionTwo">
+          <!-- the below div will added by JS -->
+          <!-- <div id="divOutput">
+            <h6 id="h6Output">Tasks</h6>
+            <small id="smallOutput">${inputOneValue}</small>
+            <form>
+              <button id="buttonTwo">Delete</button>
+            </form>
+          </div> -->
+        </section>
+      </article>
+      <footer>
+        <p>Copyright 2023 &copy; all right reserved</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

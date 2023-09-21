@@ -1,0 +1,102 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Fuzzy Bubbles", cursive;
+}
+#container {
+  background-color: whitesmoke;
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas:
+    "header header"
+    "article article"
+    "footer footer";
+}
+header {
+  padding: 10px;
+  grid-area: header;
+  text-align: center;
+  background-color: rgba(138, 221, 138, 0.514);
+}
+article {
+  grid-area: article;
+}
+#formOne {
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(2, auto 50px);
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "labelOne labelOne"
+    "inputOne buttonOne";
+  padding-bottom: 20px;
+}
+#labelOne {
+  grid-area: labelOne;
+  margin-left: 250px;
+  margin-top: 10px;
+}
+#inputOne {
+  grid-area: inputOne;
+  margin-left: 250px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+#buttonOne {
+  grid-area: buttonOne;
+  background-color: #566095b8;
+  color: white;
+  border-radius: 5px;
+  border: 0px;
+}
+#divOutput {
+  display: grid;
+  height: auto;
+  grid-template-columns: repeat(2, auto 50px);
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "h6Output h6Output"
+    "smallOutput buttonTwo";
+  padding-bottom: 20px;
+  position: relative;
+}
+#h6Output {
+  grid-area: h6Output;
+  margin-left: 250px;
+  font-size: 14px;
+
+}
+#smallOutput {
+  grid-area: smallOutput;
+  margin-left: 250px;
+  margin-right: 10px;
+  border-style: solid;
+  border-radius: 3px;
+  border-width: 0.1px;
+  border-color: black;
+  font-size: 14px;
+  height: 20px;
+  width: 360px;
+  padding: 2px 5px;
+}
+#buttonTwo {
+  grid-area: buttonTwo;
+  background-color: #d19090;
+  color: white;
+  border-radius: 5px;
+  border: 0px;
+  position: absolute;
+  right: 40px;
+  bottom: 0px;
+  transform: translateX(-50px);
+  padding: 3px 2px;
+  width: 50px;
+  height: 20px;
+}
+footer {
+  grid-area: footer;
+  padding: 20px;
+}
